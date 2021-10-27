@@ -14,7 +14,7 @@ parser.add_argument('--csv_file_path', required=True)
 args = parser.parse_args()
 csv_file_path = args.csv_file_path
 
-df = pd.read_csv(csv_file_path, index_col=0)
+df = pd.read_csv(csv_file_path)
 for col in df.columns:
     table.add_column(col)
 
